@@ -1,0 +1,24 @@
+ /*
+Autor: BRYAN
+Data:27/02/2025
+Nome do arquivo:Estrutura de decisao 
+Descrição: atividade 3 led
+*/
+
+#define PinLedVermelho 12
+
+void setup()
+{
+ pinMode(PinLedVermelho,OUTPUT);
+  int numeroA = 2;
+  int numeroB = 4;
+  int resultado = 0;
+  
+  resultado = numeroA % 2;
+  if(resultado == 0){
+    digitalWrite(PinLedVermelho,HIGH);
+  }
+}
+
+void loop()
+{ 

@@ -1,0 +1,23 @@
+ /*
+Autor: BRYAN
+Data:27/02/2025
+Nome do arquivo:Estrutura de decisao 
+Descrição: atividade 7 maior numero
+*/
+
+void setup()
+{
+  Serial.begin(9600);
+  int numero1 = 5;
+  int numero2 = 15;
+   if ( numero1 > numero2){
+  Serial.println("5");
+}else if (numero2 > numero1){
+  Serial.println("15");
+}
+}
+
+void loop()
+{
+ 
+}

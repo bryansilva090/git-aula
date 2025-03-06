@@ -1,0 +1,26 @@
+ /*
+Autor: BRYAN
+Data:27/02/2025
+Nome do arquivo:Estrutura de decisao 
+Descrição: atividade 1 temperatura
+*/
+
+ #define pinLedVermelho 12 
+
+void setup()
+{
+ pinMode(pinLedVermelho,OUTPUT); //define o pino led como saida
+ int temperatura = 60;
+  
+ if (temperatura > 30){
+ digitalWrite(pinLedVermelho,HIGH); //liga o led
+  
+  }
+  
+  
+}
+
+void loop()
+{
+  
+}

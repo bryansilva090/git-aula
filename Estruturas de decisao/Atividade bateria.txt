@@ -1,0 +1,22 @@
+/*
+Autor: BRYAN
+Data:27/02/2025
+Nome do arquivo:Estrutura de decisao 
+Descrição: atividade 2 bateria
+*/
+
+#define PinLedVermelho 12
+
+void setup()
+{
+  pinMode(PinLedVermelho,OUTPUT);
+ int bateria = 10;
+ if (bateria < 20){
+  digitalWrite(PinLedVermelho,HIGH);
+  }
+}
+
+void loop()
+{
+}
+  

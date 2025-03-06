@@ -1,0 +1,23 @@
+/*
+Autor: BRYAN
+Data:27/02/2025
+Nome do arquivo:Estrutura de decisao 
+Descrição: exercicio 4 numeros positivo e negativo
+*/
+
+void setup()
+{
+  int numero = 5;
+  Serial.begin(9600);
+  if ( numero <= 0){
+  Serial.println("negativo");
+  }else if ( numero >= 0);{
+  Serial.println("positivo");
+  }
+  }
+    
+
+void loop()
+{
+ 
+}

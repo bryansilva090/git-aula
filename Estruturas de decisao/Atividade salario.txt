@@ -1,0 +1,27 @@
+ /*
+Autor: BRYAN
+Data:27/02/2025
+Nome do arquivo:Estrutura de decisao 
+Descrição: atividade 5 salario
+*/ 
+
+
+ int salario = 850;
+ int resultado = 0;
+
+void setup()
+{
+ Serial.begin (9600);
+  if (salario < 1000){
+   resultado = salario * 10 / 100 + salario;
+   Serial.println ("luis vendedor");
+   Serial.println ("antigo salario 850");
+   Serial.println ("novo salario");
+   Serial.println (resultado);
+  } 
+}
+
+void loop()
+{
+ 
+}

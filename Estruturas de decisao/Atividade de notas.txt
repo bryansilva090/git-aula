@@ -1,0 +1,24 @@
+/*
+Autor: BRYAN
+Data:27/02/2025
+Nome do arquivo:Estrutura de decisao 
+Descrição: atividade 8 notas
+*/
+
+  int nota1 = 7;
+  int nota2 = 0 ;
+  int nota3 = 5;
+  int nota4 = 10;
+  int media = 0;
+void setup()
+{
+  Serial.begin(9600);
+ media = (nota1 + nota2 + nota3 + nota4) / 4;
+  if (media >= 7){
+     Serial.println("aprovado");
+  }else if (media <= 5){Serial.println("reprovado");
+  }
+}
+
+void loop()
+{
