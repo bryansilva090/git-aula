@@ -1,0 +1,60 @@
+/*/*
+Autor: BRYAN
+Data:03/04/2025
+Nome do arquivo:FUNCOES
+Descrição: atividade 50
+*/
+
+
+
+
+
+
+*/
+
+
+FUNCOES
+
+
+
+#include <Arduino.h>  // Inclui a biblioteca principal do Arduino
+
+// Declaração das funções que serão usadas no código
+void ligaLed(int pin);              // Função para ligar o LED
+void desligaLed(int pin);           // Função para desligar o LED
+void piscaLed(int pin, unsigned long tempo);  // Função para fazer o LED piscar
+int somaDeDoisN(int numeroA, int numeroB);    // Função para somar dois números
+
+void setup() {
+  pinMode(2, OUTPUT);  // Configura o pino 2 como saída (para controlar o LED)
+  Serial.begin(9600);  // Inicializa a comunicação serial a 9600 bps
+}
+
+void loop() {
+  // Chama a função piscaLed para piscar o LED no pino 2 a cada 100 milissegundos
+  piscaLed(2, 100);
+  
+  // Imprime a soma de 4 + 8 no monitor serial
+  Serial.print("Soma: ");               // Imprime o texto "Soma: " antes do valor
+  Serial.println(somaDeDoisN(4, 8));    // Imprime o resultado da soma de 4 e 8 no serial monitor
+}
+
+void ligaLed(int pin) {
+  digitalWrite(pin, HIGH);  // Liga o LED, envia nível lógico alto para o pino especificado
+}
+
+void desligaLed(int pin) {
+  digitalWrite(pin, LOW);  // Desliga o LED, envia nível lógico baixo para o pino especificado
+}
+
+void piscaLed(int pin, unsigned long tempo) {
+  ligaLed(pin);             // Chama a função ligaLed para ligar o LED
+  delay(tempo);             // Aguarda o tempo especificado (em milissegundos)
+  desligaLed(pin);          // Chama a função desligaLed para desligar o LED
+  delay(tempo);             // Aguarda o mesmo tempo novamente para completar o ciclo de piscar
+}
+
+int somaDeDoisN(int numeroA, int numeroB) {
+  int resultado = numeroA + numeroB;  // Soma os dois números passados como argumentos
+  return resultado;                   // Retorna o resultado da soma
+}
